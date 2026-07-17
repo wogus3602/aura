@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aura 개인정보 처리방침</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --surface:#ffffff; --ink:#161a1f; --muted:#5b636e; --line:#e6e9ee;
+    --mint:#1f9e8f; --mint-soft:#e6f6f3; --accent:#0f1622;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#060909; --surface:#0d1319; --ink:#eef2f4; --muted:#9aa3ad; --line:#1c2530;
+      --mint:#46d6c6; --mint-soft:#0f2320; --accent:#46d6c6;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",Segoe UI,Roboto,sans-serif;
+    line-height:1.7; word-break:keep-all; overflow-wrap:break-word;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:56px 22px 96px}
+  .brand{font-size:13px; letter-spacing:.42em; font-weight:300; color:var(--mint); text-transform:uppercase}
+  h1{font-size:30px; line-height:1.25; margin:.5rem 0 .25rem; letter-spacing:-.01em; text-wrap:balance}
+  .eff{color:var(--muted); font-size:13.5px; margin-bottom:28px}
+  .summary{
+    background:var(--mint-soft); border:1px solid var(--line); border-radius:16px;
+    padding:18px 20px; margin:0 0 34px;
+  }
+  .summary ul{margin:0; padding-left:1.1em}
+  .summary li{margin:.28em 0}
+  .summary strong{color:var(--mint)}
+  h2{font-size:18px; margin:38px 0 10px; letter-spacing:-.01em}
+  h2 .n{color:var(--mint); font-variant-numeric:tabular-nums; margin-right:.5em; font-weight:700}
+  p{margin:.5em 0; color:var(--ink)}
+  .muted{color:var(--muted)}
+  table{width:100%; border-collapse:collapse; margin:12px 0; font-size:14.5px; display:block; overflow-x:auto}
+  th,td{text-align:left; padding:11px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--muted); font-weight:600; white-space:nowrap}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:4px 18px; margin:10px 0}
+  a{color:var(--mint); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .note{font-size:13px; color:var(--muted); border-top:1px solid var(--line); margin-top:44px; padding-top:20px}
+  code{background:var(--mint-soft); padding:.1em .4em; border-radius:6px; font-size:.9em}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="brand">Aura</div>
+  <h1>개인정보 처리방침</h1>
+  <div class="eff">시행일 · 2026년 7월 17일</div>
+
+  <div class="summary">
+    <ul>
+      <li>Aura는 <strong>자체 서버가 없으며, 어떤 정보도 저희에게 전송되지 않습니다.</strong></li>
+      <li>사용 기록은 <strong>당신의 기기에만</strong>, 개인화 프로필은 <strong>기기와 당신의 개인 iCloud</strong>(백업)에만 저장됩니다.</li>
+      <li>언제든 앱 <strong>설정에서 내보내기·전체 삭제</strong>가 가능합니다.</li>
+    </ul>
+  </div>
+
+  <p>본 방침은 Aura(이하 “앱”)가 이용자의 정보를 어떻게 다루는지 설명합니다. 앱은 개인을 식별하는 정보를 수집·전송하지 않으며, 모든 처리는 이용자 기기 내에서 이루어집니다.</p>
+
+  <h2><span class="n">1</span>수집·이용하는 정보</h2>
+  <div class="card">
+  <table>
+    <tr><th>항목</th><th>내용</th><th>목적 · 저장</th></tr>
+    <tr><td>사용 기록</td><td>재생/정지, 모드, 좋아요·별로, 세션 길이 등</td><td>사운드 개인화 · <b>기기에만 저장</b></td></tr>
+    <tr><td>위치</td><td>현재 위치(대략)</td><td>WeatherKit 날씨 조회 시에만 사용 · <b>저장하지 않음</b></td></tr>
+    <tr><td>마이크</td><td>주변 소음 <b>수준(RMS)만</b> 측정</td><td>마스킹 강도 조절 · 동의 시에만 · <b>오디오 저장·전송 안 함</b></td></tr>
+    <tr><td>iCloud</td><td>개인화 프로필(설정값)</td><td>기기 간 백업 · 이용자의 iCloud 계정 내(Apple 처리)</td></tr>
+  </table>
+  </div>
+  <p class="muted">위치·마이크는 이용자가 기능을 켜고 시스템 권한을 허용한 경우에만 사용되며, 언제든 기기 설정에서 해제할 수 있습니다.</p>
+
+  <h2><span class="n">2</span>제3자 제공 및 국외 이전</h2>
+  <p>앱은 이용자 정보를 제3자에게 제공하거나 판매하지 않습니다. 앱 자체의 서버가 없어 전송되는 데이터가 없습니다. 날씨(Apple WeatherKit)와 프로필 백업(Apple iCloud)은 Apple이 제공하는 기능으로, 해당 처리에는 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 개인정보 보호정책</a>이 적용됩니다.</p>
+
+  <h2><span class="n">3</span>보관 및 파기</h2>
+  <p>사용 기록·프로필은 이용자 기기(및 iCloud 백업)에 보관됩니다. 이용자는 앱 <b>설정 → 데이터 &amp; 개인정보</b>에서 <b>내보내기</b> 또는 <b>모두 삭제</b>를 통해 즉시 파기할 수 있으며(iCloud 백업 포함), 앱 삭제 시 기기 내 데이터도 함께 제거됩니다. 여러 기기에서 같은 iCloud 계정을 사용하는 경우, 다른 기기에 남아 있는 프로필이 다시 동기화될 수 있으므로 완전 삭제를 원하면 각 기기에서 삭제해 주세요.</p>
+
+  <h2><span class="n">4</span>이용자의 권리</h2>
+  <p>이용자는 자신의 데이터를 언제든지 <b>열람·내보내기(export)</b> 및 <b>삭제</b>할 수 있습니다. 앱이 서버에 정보를 보관하지 않으므로, 이 권리는 전적으로 이용자의 기기에서 즉시 행사됩니다.</p>
+
+  <h2><span class="n">5</span>추적 및 광고</h2>
+  <p>앱은 광고를 게재하지 않으며, 이용자를 다른 앱·웹사이트에 걸쳐 추적하지 않습니다. 분석 도구·광고 식별자(IDFA)를 사용하지 않습니다.</p>
+
+  <h2><span class="n">6</span>아동의 개인정보</h2>
+  <p>앱은 만 14세 미만 아동을 주 대상으로 하지 않으며, 아동으로부터 고의로 개인정보를 수집하지 않습니다.</p>
+
+  <h2><span class="n">7</span>의료기기가 아님</h2>
+  <p>Aura는 웰니스 목적의 사운드 서비스이며 <b>의료기기가 아닙니다.</b> 질병의 진단·치료·예방을 목적으로 하지 않으며, 집중·수면 등의 효과는 개인에 따라 다를 수 있습니다.</p>
+
+  <h2><span class="n">8</span>방침 변경 및 문의</h2>
+  <p>본 방침이 변경되면 본 페이지의 시행일을 갱신하여 고지합니다. 문의: <a href="mailto:allkj98@gmail.com">allkj98@gmail.com</a></p>
+
+  <div class="note">
+    © 2026 Aura. 본 문서는 이용자 이해를 돕기 위한 것이며, 관련 법령이 우선합니다.
+  </div>
+</main>
+</body>
+</html>
